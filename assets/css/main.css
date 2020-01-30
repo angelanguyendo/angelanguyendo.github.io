@@ -1942,7 +1942,7 @@ input, select, textarea {
 	}
 
 	.features > article > h3 > i {
-		margin-left: -50px !important;
+		margin-left: -40px !important;
 		margin-right: 10px;
 		font-size: 1.875rem;
 	}
