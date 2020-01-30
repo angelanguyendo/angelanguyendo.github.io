@@ -1938,6 +1938,13 @@ input, select, textarea {
 		-webkit-flex-wrap: wrap;
 		-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
+
+	}
+
+	.features > article > h3 > i {
+		margin-left: -50px !important;
+		margin-right: 10px;
+		font-size: 1.875rem;
 	}
 
 		.features > article {
@@ -2018,33 +2025,6 @@ input, select, textarea {
 		}
 
 		@media screen and (max-width: 980px) {
-
-			.features > article {
-				padding: 3em 0;
-			}
-
-				.features > article:before {
-					font-size: 1.5rem;
-					top: 1.52308em;
-				}
-
-				.features > article:nth-child(2n -1) {
-					padding-left: 3em;
-					padding-right: 3em;
-				}
-
-				.features > article:nth-child(2n) {
-					padding-left: 6em;
-					padding-right: 0;
-				}
-
-					.features > article:nth-child(2n):before {
-						left: 1.84615em;
-					}
-
-		}
-
-		@media screen and (max-width: 480px) {
 
 			.features > article {
 				border-left-width: 0;
