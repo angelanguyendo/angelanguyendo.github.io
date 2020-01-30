@@ -1928,7 +1928,9 @@ input, select, textarea {
 		}
 
 /* Features */
-
+	.map {
+		margin-bottom: -10px;
+	}
 	.features {
 		display: -moz-flex;
 		display: -webkit-flex;
