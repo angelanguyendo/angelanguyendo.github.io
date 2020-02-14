@@ -2383,7 +2383,7 @@ input, select, textarea {
 			background-repeat: no-repeat;
 			background-size: cover;
 			position: relative;
-			width: 50%;
+			width: 33.333%;
 		}
 
 			.quotes > article .author {
@@ -2402,15 +2402,11 @@ input, select, textarea {
 					display: block;
 				}
 
-			.quotes > article:nth-child(odd) {
-				padding-left: calc(50vw - 40em);
-				padding-right: 3em;
-			}
-
-			.quotes > article:nth-child(even) {
-				padding-left: 3em;
-				padding-right: calc(50vw - 40em);
-			}
+				.quotes > article {
+					padding-left: 3em;
+					padding-right: 3em;
+				}
+			
 
 			.quotes > article:before {
 				background-color: #5ac3d6;
