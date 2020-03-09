@@ -72,6 +72,10 @@ input, select, textarea {
 	appearance: none;
 }
 
+.hours-operation {
+	color: white;
+}
+
 /* Basic */
 
 	@-ms-viewport {
