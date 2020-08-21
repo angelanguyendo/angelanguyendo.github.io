@@ -4667,10 +4667,8 @@ input, select, textarea {
 		}
 
 /* Banner */
-
 	#banner {
-		background-color: #5ac3d6;
-		color: rgba(255, 255, 255, 0.75);
+		background-color: #272833;
 		padding: 10em 0 6em 0 ;
 		display: -moz-flex;
 		display: -webkit-flex;
@@ -4686,12 +4684,36 @@ input, select, textarea {
 		justify-content: center;
 		background-attachment: fixed;
 		background-image: url("../../images/splash.jpg");
+		box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.50);
 		background-position: bottom left;
 		background-size: cover;
 		border-top: solid 10px #5ac3d6;
 		min-height: 75vh;
 		position: relative;
 		text-align: center;
+		width: 100%;
+		z-index: 21;
+	}
+
+	#banner:before {
+		content: '';
+		display: inline-block;
+		height: 100vh;
+		vertical-align: middle;
+		width: 1%;
+	}
+
+	#banner:after {
+		background-image: -moz-linear-gradient(top, rgba(23, 24, 32, 0.60), rgba(23, 24, 32, 0.60)), url("images/overlay.png");;
+		background-image: -webkit-linear-gradient(top, rgba(23, 24, 32, 0.60), rgba(23, 24, 32, 0.60)), url("images/overlay.png");;
+		background-image: -ms-linear-gradient(top, rgba(23, 24, 32, 0.60), rgba(23, 24, 32, 0.60)), url("images/overlay.png");;
+		background-image: linear-gradient(top, rgba(23, 24, 32, 0.60), rgba(23, 24, 32, 0.60)), url("images/overlay.png");;
+		content: '';
+		display: block;
+		height: 100%;
+		left: 0;
+		position: absolute;
+		top: 0;
 		width: 100%;
 	}
 
@@ -4724,6 +4746,12 @@ input, select, textarea {
 			border-bottom-color: rgba(255, 255, 255, 0.25);
 		}
 
+		#banner h2 {
+			font-size: 1.7em;
+			font-weight: bold;
+
+		}
+
 		#banner input[type="submit"],
 		#banner input[type="reset"],
 		#banner input[type="button"],
@@ -4732,6 +4760,8 @@ input, select, textarea {
 			background-color: transparent;
 			box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.75);
 			color: #ffffff !important;
+			font-size: 1em;
+			font-weight: bold;
 		}
 
 			#banner input[type="submit"]:hover,
@@ -4761,12 +4791,14 @@ input, select, textarea {
 			#banner input[type="submit"].primary,
 			#banner input[type="reset"].primary,
 			#banner input[type="button"].primary,
+			#banner a.button.primary,
 			#banner button.primary,
 			#banner .button.primary {
 				box-shadow: none;
 				background-color: #ffffff;
 				color: #5ac3d6 !important;
 			}
+			
 
 				#banner input[type="submit"].primary.icon:before,
 				#banner input[type="reset"].primary.icon:before,
