@@ -4809,10 +4809,6 @@ input, select, textarea {
 				}
 
 		#banner > .inner {
-			-moz-transition: -moz-transform 0.75s ease-in-out, opacity 0.75s ease-in-out;
-			-webkit-transition: -webkit-transform 0.75s ease-in-out, opacity 0.75s ease-in-out;
-			-ms-transition: -ms-transform 0.75s ease-in-out, opacity 0.75s ease-in-out;
-			transition: transform 0.75s ease-in-out, opacity 0.75s ease-in-out;
 			position: relative;
 			width: 45em;
 			max-width: calc(100% - 6em);
